@@ -1,5 +1,49 @@
-.page__header {
+.header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/header-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Poppins";
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  align-items: center;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav {
+    border: solid 3px black;
+
+    color: $background-dark-green;
+    & .hamburger {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__logo {
+    width: 213px;
+    height: 96px;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: $background-dark-green;
+  }
+}
+.buy-now {
+  width: 176px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: $background-dark-green;
+  border: none;
+  text-transform: capitalize;
+  color: $background-white;
 }
