@@ -1,14 +1,13 @@
 .section1 {
-  background-color: $color-light-grey;
   display: grid;
-  grid-template-columns: span 1;
-  grid-template-rows: span 4;
-  gap: 50px;
-  text-align: center;
+  grid-template-columns: 80%;
+  grid-template-rows: 25%, 25%, 25%, 25%;
+  background-color: $color-light-grey;
   font-family: $font-text;
   color: $color-green;
 
   &__title {
+    margin: 41px, 47px, 37px, 45px;
     font-size: 24px;
     font-weight: 600;
   }
@@ -50,8 +49,12 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  &__title {
+    font-size: 24px;
+  }
 }
 
-.section3__image2 {
-  width: 100%;
+.section3__image {
+  width: 300px;
 }
