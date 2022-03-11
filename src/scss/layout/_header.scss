@@ -12,7 +12,7 @@
 
   &__nav {
     border: solid 3px black;
-    color: $background-dark-green;
+    color: $color-green;
     position: fixed;
     top: 55px;
     left: 33px;
@@ -34,7 +34,7 @@
     margin-top: 100px;
     font-size: 24px;
     font-weight: 600;
-    color: $background-dark-green;
+    color: $color-green;
   }
 }
 
@@ -44,8 +44,8 @@
   margin-top: 24px;
   font-size: 16px;
   font-weight: 600;
-  background-color: $background-dark-green;
+  background-color: $color-green;
   border: none;
   text-transform: capitalize;
-  color: $background-white;
+  color: $color-white;
 }
