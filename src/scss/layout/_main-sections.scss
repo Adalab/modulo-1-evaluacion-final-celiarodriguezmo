@@ -1,27 +1,31 @@
 .section1 {
   display: grid;
-  grid-template-columns: 80%;
+  grid-template-columns: 100%;
   grid-template-rows: 25%, 25%, 25%, 25%;
   background-color: $color-light-grey;
   font-family: $font-text;
   color: $color-green;
+  text-align: center;
 
-  &__title {
-    margin: 41px, 47px, 37px, 45px;
+  &__title1 {
+    max-width: 400px;
+    margin-top: 41px;
     font-size: 24px;
     font-weight: 600;
   }
-  &__article {
-    display: flex;
-    align-items: center;
+}
 
-    & .title {
-      font-size: 20px;
-    }
-    & .picture {
-      width: 90px;
-      height: 90px;
-    }
+.section1__article {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  &--title {
+    font-size: 20px;
+  }
+  &--picture {
+    width: 90px;
+    height: 90px;
   }
 }
 
