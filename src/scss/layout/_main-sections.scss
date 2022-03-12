@@ -85,11 +85,11 @@
 }
 
 .section3 {
-  height: 643px;
+  height: 100vh;
   background-color: $color-light-grey;
   background-image: url("../images/main-photo.jpg");
   background-repeat: no-repeat;
-  background-position: center 339px;
+  background-position: center 304px;
   font-family: $font-text;
   color: $color-green;
   display: flex;
@@ -107,14 +107,14 @@
   }
 }
 
-.button-buy-now {
+.buy-now2 {
   width: 176px;
   height: 48px;
-  margin-bottom: 92px;
   font-size: 16px;
   font-weight: 600;
   background-color: $color-green;
   border: none;
   text-transform: capitalize;
   color: $color-white;
+  cursor: pointer;
 }
