@@ -1,16 +1,19 @@
 .footer {
-  height: 100%;
+  padding: 46px 59px 56px 150px;
   background-color: $color-green;
   font-family: $font-text;
   color: $color-grey;
-  padding: 56px 59px 56px 146px;
   display: flex;
   flex-direction: column;
 }
 
 .menu2 {
+  max-width: 208px;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
+  text-align: left;
+  justify-content: flex-start;
 
   &__title {
     font-size: 1.25rem;
@@ -19,8 +22,41 @@
     font-size: 0.875rem;
     list-style: none;
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
   }
 }
-.div-rrss a i {
+
+.menu2__list li a {
+  text-decoration: none;
+  color: $color-grey;
+}
+
+.div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  &__rrss {
+    &--icon {
+      color: $color-white;
+      padding: 3px;
+    }
+  }
+}
+
+.button {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 208px;
+  border: none;
+  background-color: transparent;
   color: $color-white;
+  &__arrow {
+    padding: 16px;
+  }
+  &__arrow:visited {
+    color: $color-white;
+  }
 }
