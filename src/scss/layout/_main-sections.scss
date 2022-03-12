@@ -1,15 +1,19 @@
 .section1 {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 191px 268px 268px 268px;
+  grid-template-columns: 1fr;
+  grid-template-rows: fit-content(20%) 1fr 1fr 1fr;
+  row-gap: 14px;
   background-color: $color-light-grey;
   font-family: $font-text;
   color: $color-green;
-  align-items: center;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 
   &__title1 {
+    margin: 41px 47px 0 45px;
     font-size: 24px;
+
     &--mayus {
       text-transform: uppercase;
     }
@@ -21,10 +25,9 @@
   flex-direction: column-reverse;
   align-items: center;
   text-align: center;
-  justify-content: space-evenly;
 
   &__div {
-    width: 208px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     margin: 23px;
@@ -41,30 +44,52 @@
 
   &__picture {
     width: 90px;
-    height: 99px;
     margin: 23px;
   }
 }
 
 .section2 {
+  padding: 46px 0 51px 0;
+
   background-color: $color-orange;
   font-family: $font-text;
-  color: $color-green;
+  color: $color-white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
-  &__title {
-    font-size: 60px;
-    margin: 100px 20px 50px 20px;
-  }
+
   &__image {
     width: 120px;
     height: 120px;
   }
+  &__div {
+    display: flex;
+    flex-direction: column;
+    &--title {
+      font-size: 24px;
+      margin: 10px;
+    }
+    &--text {
+      font-size: 14px;
+      margin: 5px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    color: $color-white;
+    padding: 12px 24px;
+  }
 }
+
 .section3 {
+  height: 643px;
   background-color: $color-light-grey;
+  background-image: url("../images/main-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center 339px;
   font-family: $font-text;
   color: $color-green;
   display: flex;
@@ -74,9 +99,22 @@
 
   &__title {
     font-size: 24px;
+    margin: 87px 0 5px 0;
+  }
+  &__text {
+    font-size: 14px;
+    margin: 5px 0 23px 0;
   }
 }
 
-.section3__image {
-  width: 300px;
+.button-buy-now {
+  width: 176px;
+  height: 48px;
+  margin-bottom: 92px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: $color-green;
+  border: none;
+  text-transform: capitalize;
+  color: $color-white;
 }
