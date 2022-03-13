@@ -1,7 +1,7 @@
 .footer {
   padding: 46px 59px 56px 150px;
   background-color: $color-green;
-  font-family: $font-text;
+  font-family: $Poppins;
   color: $color-grey;
   display: flex;
   flex-direction: column;
@@ -17,9 +17,11 @@
 
   &__title {
     font-size: 1.25rem;
+    font-weight: $semibold;
   }
   &__list {
     font-size: 0.875rem;
+    font-weight: $regular;
     list-style: none;
     line-height: 20px;
     display: flex;

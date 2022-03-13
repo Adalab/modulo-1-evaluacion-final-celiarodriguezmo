@@ -4,7 +4,7 @@
   grid-template-rows: fit-content(20%) 1fr 1fr 1fr;
   row-gap: 14px;
   background-color: $color-light-grey;
-  font-family: $font-text;
+  font-family: $Poppins;
   color: $color-green;
   text-align: center;
   align-items: center;
@@ -13,6 +13,7 @@
   &__title1 {
     margin: 41px 47px 0 45px;
     font-size: 1.5rem;
+    font-weight: $semibold;
 
     &--mayus {
       text-transform: uppercase;
@@ -34,10 +35,12 @@
 
     &--title {
       font-size: 1.25rem;
+      font-weight: $semibold;
       margin: 6px;
     }
     &--text {
       font-size: 1rem;
+      font-weight: $regular;
       margin: 6px;
     }
   }
@@ -50,9 +53,8 @@
 
 .section2 {
   padding: 46px 0 51px 0;
-
   background-color: $color-orange;
-  font-family: $font-text;
+  font-family: $Poppins;
   color: $color-white;
   display: flex;
   flex-direction: column;
@@ -69,16 +71,19 @@
     flex-direction: column;
     &--title {
       font-size: 1.25rem;
+      font-weight: $semibold;
       margin: 10px;
     }
     &--text {
       font-size: 0.875rem;
+      font-weight: $regular;
       margin: 5px;
     }
   }
 
   &__link {
     font-size: 1rem;
+    font-weight: $semibold;
     color: $color-white;
     padding: 12px 24px;
   }
@@ -91,7 +96,7 @@
   background-repeat: no-repeat;
   background-size: 190%;
   background-position: bottom center;
-  font-family: $font-text;
+  font-family: $Poppins;
   color: $color-green;
   display: flex;
   flex-direction: column;
@@ -101,10 +106,12 @@
 
   &__title {
     font-size: 1.5rem;
+    font-weight: $semibold;
     margin: 87px 0 5px 0;
   }
   &__text {
     font-size: 0.875rem;
+    font-weight: $regular;
     margin: 5px 0 23px 0;
   }
 }
@@ -114,7 +121,7 @@
   height: 48px;
   margin-bottom: 92px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: $semibold;
   background-color: $color-green;
   border: none;
   text-transform: capitalize;
