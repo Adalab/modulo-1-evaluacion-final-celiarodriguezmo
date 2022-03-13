@@ -158,7 +158,7 @@
     align-items: flex-start;
     text-align: left;
     justify-content: center;
-    background-size: 50%;
+    background-size: 60%;
     background-position: right;
     padding-left: 250px;
   }
@@ -199,8 +199,15 @@
   font-size: 1rem;
   font-weight: $semibold;
   background-color: $color-green;
+  box-shadow: inset 0 0 0 0 rgba(236, 94, 11, 0.87);
+  transition: ease-out 1s;
   border: none;
   text-transform: capitalize;
   color: $color-white;
+  cursor: pointer;
+}
+.buy-now2:hover {
+  box-shadow: inset 176px 0 0 0 rgb(192, 130, 253);
+  color: $color-green;
   cursor: pointer;
 }
