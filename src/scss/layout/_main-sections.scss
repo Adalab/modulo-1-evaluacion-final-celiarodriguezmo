@@ -14,6 +14,11 @@
     row-gap: 40px;
   }
 
+  @media all and (min-width: 1200px) {
+    padding: 42px 239px 86px 239px;
+    row-gap: 67px;
+  }
+
   &__title1 {
     font-size: 1.5rem;
     font-weight: $semibold;
@@ -21,6 +26,12 @@
 
     @media all and (min-width: 768px) {
       grid-column: 1/4;
+    }
+
+    @media all and (min-width: 1200px) {
+      max-width: 800px;
+      justify-self: center;
+      font-size: 2.25rem;
     }
 
     &--mayus {
@@ -37,17 +48,23 @@
   justify-items: center;
 
   &__div {
-    width: 70%;
+    max-width: 208px;
     align-self: center;
+
     @media all and (min-width: 768px) {
-      width: 90%;
       align-self: start;
+      max-width: 220px;
     }
+
     &--title {
       font-size: 1.25rem;
       font-weight: $semibold;
       margin: 6px;
     }
+    @media all and (min-width: 1200px) {
+      font-size: 1.5rem;
+    }
+
     &--text {
       font-size: 1rem;
       font-weight: $regular;
@@ -73,6 +90,10 @@
   justify-content: space-between;
   text-align: center;
 
+  @media all and (min-width: 1200px) {
+    padding: 61px 0 78px 0;
+  }
+
   &__image {
     width: 120px;
     height: 120px;
@@ -88,11 +109,19 @@
       @media all and (min-width: 768px) {
         font-size: 1.875rem;
       }
+
+      @media all and (min-width: 1200px) {
+        font-size: 2.25rem;
+      }
     }
     &--text {
       font-size: 0.875rem;
       font-weight: $regular;
       margin: 5px;
+
+      @media all and (min-width: 1200px) {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -124,6 +153,15 @@
     background-size: 100%;
     background-position: bottom left;
   }
+  @media all and (min-width: 1200px) {
+    height: 50vh;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+    background-size: 50%;
+    background-position: right;
+    padding-left: 250px;
+  }
 
   &__title {
     width: 360px;
@@ -133,7 +171,10 @@
 
     @media all and (min-width: 768px) {
       font-size: 1.875rem;
-      width: 490px;
+      width: 430px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 2.25rem;
     }
   }
   &__text {
@@ -143,6 +184,10 @@
     width: 360px;
     @media all and (min-width: 768px) {
       max-width: 430px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: 1rem;
+      max-width: 281px;
     }
   }
 }

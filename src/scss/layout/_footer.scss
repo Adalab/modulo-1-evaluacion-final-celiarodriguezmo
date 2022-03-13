@@ -1,10 +1,19 @@
 .footer {
-  padding: 46px 59px 56px 150px;
+  padding: 46px 59px 56px 146px;
   background-color: $color-green;
   font-family: $Poppins;
   color: $color-grey;
   display: flex;
   flex-direction: column;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 71px 118px 74px 118px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 131px 187px 131px 352px;
+  }
 }
 
 .menu2 {
@@ -18,7 +27,12 @@
   &__title {
     font-size: 1.25rem;
     font-weight: $semibold;
+
+    @media all and (min-width: 1200px) {
+      font-size: 1.5rem;
+    }
   }
+
   &__list {
     font-size: 0.875rem;
     font-weight: $regular;
@@ -26,6 +40,10 @@
     line-height: 20px;
     display: flex;
     flex-direction: column;
+
+    @media all and (min-width: 1200px) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -39,10 +57,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  margin-top: 15px;
+  justify-content: baseline;
   &__rrss {
     &--icon {
       color: $color-white;
-      padding: 3px;
+      padding: 5.5px;
     }
   }
 }
@@ -51,7 +71,7 @@
   width: 24px;
   height: 24px;
   position: relative;
-  left: 208px;
+  left: 215px;
   border: none;
   background-color: transparent;
   color: $color-white;
@@ -60,5 +80,10 @@
   }
   &__arrow:visited {
     color: $color-white;
+  }
+
+  @media all and (min-width: 768px) {
+    position: static;
+    transform: translateX(-100px) translateY(100px);
   }
 }
