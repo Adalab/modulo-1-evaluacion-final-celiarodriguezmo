@@ -1,19 +1,27 @@
 .section1 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: fit-content(20%) 1fr 1fr 1fr;
-  row-gap: 14px;
+  grid-template-rows: 113px 1fr 1fr 1fr;
+  padding: 41px 47px 18px 45px;
   background-color: $color-light-grey;
   font-family: $Poppins;
   color: $color-green;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+
+  @media all and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 38px 1fr;
+    padding: 63px 47px 73px 45px;
+    row-gap: 40px;
+  }
 
   &__title1 {
-    margin: 41px 47px 0 45px;
     font-size: 1.5rem;
     font-weight: $semibold;
+    text-align: center;
+
+    @media all and (min-width: 768px) {
+      grid-column: 1/4;
+    }
 
     &--mayus {
       text-transform: uppercase;
@@ -22,17 +30,19 @@
 }
 
 .article {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
   text-align: center;
+  justify-items: center;
 
   &__div {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: 23px;
-
+    width: 70%;
+    align-self: center;
+    @media all and (min-width: 768px) {
+      width: 90%;
+      align-self: start;
+    }
     &--title {
       font-size: 1.25rem;
       font-weight: $semibold;
@@ -41,13 +51,14 @@
     &--text {
       font-size: 1rem;
       font-weight: $regular;
+      text-align: center;
       margin: 6px;
     }
   }
 
   &__picture {
     width: 90px;
-    margin: 23px;
+    align-self: center;
   }
 }
 
@@ -73,6 +84,10 @@
       font-size: 1.25rem;
       font-weight: $semibold;
       margin: 10px;
+
+      @media all and (min-width: 768px) {
+        font-size: 1.875rem;
+      }
     }
     &--text {
       font-size: 0.875rem;
@@ -94,7 +109,7 @@
   background-color: $color-light-grey;
   background-image: url("../images/main-photo.jpg");
   background-repeat: no-repeat;
-  background-size: 190%;
+  background-size: 200%;
   background-position: bottom center;
   font-family: $Poppins;
   color: $color-green;
@@ -104,15 +119,31 @@
   justify-content: top;
   text-align: center;
 
+  @media all and (min-width: 768px) {
+    height: 100vh;
+    background-size: 100%;
+    background-position: bottom left;
+  }
+
   &__title {
+    width: 360px;
     font-size: 1.5rem;
     font-weight: $semibold;
     margin: 87px 0 5px 0;
+
+    @media all and (min-width: 768px) {
+      font-size: 1.875rem;
+      width: 490px;
+    }
   }
   &__text {
     font-size: 0.875rem;
     font-weight: $regular;
     margin: 5px 0 23px 0;
+    width: 360px;
+    @media all and (min-width: 768px) {
+      max-width: 430px;
+    }
   }
 }
 

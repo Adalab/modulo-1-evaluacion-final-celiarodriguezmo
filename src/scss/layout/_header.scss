@@ -114,6 +114,9 @@
       @media all and (min-width: 1200px) {
         visibility: visible;
         padding: 15px;
+        font-size: 1rem;
+        font-weight: $regular;
+        color: $color-green;
       }
     }
   }
