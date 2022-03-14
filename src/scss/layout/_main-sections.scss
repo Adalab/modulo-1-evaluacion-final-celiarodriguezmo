@@ -135,10 +135,6 @@
 
 .section3 {
   background-color: $color-light-grey;
-  background-image: url("../images/main-photo.jpg");
-  background-repeat: no-repeat;
-  background-size: 200%;
-  background-position: bottom center;
   font-family: $Poppins;
   color: $color-green;
   display: flex;
@@ -148,69 +144,84 @@
   text-align: center;
 
   @media all and (min-width: 768px) {
-    height: 100vh;
-    background-size: 100%;
-    background-position: bottom left;
   }
   @media all and (min-width: 1200px) {
-    height: 50vh;
-    align-items: flex-start;
+    align-items: center;
+    flex-direction: row;
     text-align: left;
     justify-content: center;
-    background-size: 60%;
-    background-position: right;
-    padding-left: 250px;
   }
 
-  &__title {
-    width: 360px;
-    font-size: 1.5rem;
-    font-weight: $semibold;
-    margin: 87px 0 5px 0;
+  &__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 87px 0 92px 0;
 
-    @media all and (min-width: 768px) {
-      font-size: 1.875rem;
-      width: 430px;
-    }
     @media all and (min-width: 1200px) {
-      font-size: 2.25rem;
+      width: 50%;
+      margin-left: 10%;
     }
-  }
-  &__text {
-    font-size: 0.875rem;
-    font-weight: $regular;
-    margin: 5px 0 23px 0;
-    width: 360px;
-    @media all and (min-width: 768px) {
-      max-width: 430px;
+
+    &--title {
+      width: 360px;
+      font-size: 1.5rem;
+      font-weight: $semibold;
+
+      @media all and (min-width: 768px) {
+        font-size: 1.875rem;
+        width: 430px;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 2.25rem;
+        align-self: flex-start;
+      }
     }
-    @media all and (min-width: 1200px) {
+    &--text {
+      font-size: 0.875rem;
+      font-weight: $regular;
+      margin: 5px 0 23px 0;
+      width: 360px;
+      @media all and (min-width: 768px) {
+        max-width: 430px;
+      }
+      @media all and (min-width: 1200px) {
+        font-size: 1rem;
+        max-width: 281px;
+        align-self: flex-start;
+      }
+    }
+    &--buy-now2 {
+      width: 176px;
+      height: 48px;
       font-size: 1rem;
-      max-width: 281px;
+      align-self: center;
+      font-weight: $semibold;
+      background-color: $color-green;
+      box-shadow: inset 0 0 0 0 rgba(236, 94, 11, 0.87);
+      transition: ease-out 1s;
+      border: none;
+      text-transform: capitalize;
+      color: $color-white;
+      cursor: pointer;
+
+      @media all and (min-width: 1200px) {
+        align-self: flex-start;
+      }
+    }
+    &--buy-now2:hover {
+      box-shadow: inset 176px 0 0 0 rgb(192, 130, 253);
+      color: $color-green;
+      cursor: pointer;
     }
   }
-}
 
-.buy-now2 {
-  width: 176px;
-  height: 48px;
-  margin-bottom: 92px;
-  font-size: 1rem;
-  font-weight: $semibold;
-  background-color: $color-green;
-  box-shadow: inset 0 0 0 0 rgba(236, 94, 11, 0.87);
-  transition: ease-out 1s;
-  border: none;
-  text-transform: capitalize;
-  color: $color-white;
-  cursor: pointer;
-
-  @media all and (min-width: 1200px) {
-    margin-bottom: 0;
+  &__image-bathroom {
+    width: 100%;
+    @media all and (min-width: 1200px) {
+      width: 50%;
+      object-fit: cover;
+    }
   }
-}
-.buy-now2:hover {
-  box-shadow: inset 176px 0 0 0 rgb(192, 130, 253);
-  color: $color-green;
-  cursor: pointer;
 }
