@@ -18,14 +18,20 @@
   <body>
     <header class="header" id="openspaces">
       <nav class="menu">
-        <a class="menu__link" href="https://adalab.es" target="_blank"
-          ><i class="fa-solid fa-bars menu__link--hamburger"></i
-        ></a>
+        <label for="check" class="bar-btn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input type="checkbox" name="checkbox" id="check" class="toggle" />
+        <!-- <a class="menu__link" href="https://adalab.es" target="_blank"></a> -->
         <ul class="menu__list">
-          <li class="menu__list--li">Productos</li>
-          <li class="menu__list--li">Colecciones</li>
-          <li class="menu__list--li">Tienda</li>
-          <li class="menu__list--li">Inicio</li>
+          <li class="menu__list--li">
+            <a class="resources" href="#">Productos</a>
+          </li>
+          <li class="menu__list--li">
+            <a class="resources" href="#">Colecciones</a>
+          </li>
+          <li class="menu__list--li"><a href="#" class="resources">Tienda</a></li>
+          <li class="menu__list--li"><a href="#" class="resources">Inicio</a></li>
         </ul>
       </nav>
       <img
